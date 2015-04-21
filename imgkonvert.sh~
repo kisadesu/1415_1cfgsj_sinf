@@ -14,7 +14,7 @@ while read imgfile
 do
 	echo "IMG file: $imgfile"
 	lengthname=${#imgfile}
-	echo "Length: $lengthname"
+	echo "Length: $lenthname"
 	namefile=${imgfile:0:$lengthname-4}
 	echo "namefile: $namefile"
 	convert $1/$imgfile -resize 200x200 $namefile.png	
